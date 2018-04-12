@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "\"Project for jenkins\"",
+  "scripts": {
+    "api-tests-jenkins": "newman run EXMLP.postman_collection.json"
+  },
+  "author": "Bogdan Matran",
+  "dependencies": {
+    "newman": "^3.9.3"
+  }
+}

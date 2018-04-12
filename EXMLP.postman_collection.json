@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "b0de2322-9fd8-242f-04ad-cb353c74f866",
+		"name": "EXMLP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://10.12.68.83:8081/superpointservice/services/simulate/realtime",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<request>\n    <reference-date>2017-08-02 10:50:11</reference-date>\n    <job-creation-date>2017-08-02 10:50:11</job-creation-date>\n    <redeem>\n        <amount>0</amount>\n    </redeem>\n    <order>\n        <reference-id>942239</reference-id>\n        <products-total></products-total>\n        <shipping-total>0.00</shipping-total>\n        <source>shop</source>\n        <created>2017-08-03 10:50:11</created>\n        <payment-method>PREPAID</payment-method>\n        <order-item>\n            <reference-id>4523</reference-id>\n            <qty>1</qty>\n            <product>\n                <id>1188078786</id>\n                <fixed-book-price>false</fixed-book-price>\n                <price>14009.90</price>\n            </product>\n            <campaign>\n                <id></id>\n            </campaign>\n            <shop>\n                <merchant-id>2</merchant-id>\n            </shop>\n        </order-item>\n        <order-item>\n            <reference-id>43223</reference-id>\n            <qty>1</qty>\n            <product>\n                <id>0786</id>\n                <fixed-book-price>true</fixed-book-price>\n                <price>14.90</price>\n            </product>\n            <campaign>\n                <id></id>\n            </campaign>\n            <shop>\n                <merchant-id>2</merchant-id>\n            </shop>\n        </order-item>\n        </order>\n    <customer>\n        <reference-id>11127034</reference-id>\n        <email>madalinag.test@mail.com</email>\n        <gender>male</gender>\n        <number-of-orders>1</number-of-orders>\n        <campaign>\n            <id></id>\n        </campaign>\n    </customer>\n</request>"
+				},
+				"url": {
+					"raw": "http://10.12.68.83:8081/superpointservice/services/simulate/realtime",
+					"protocol": "http",
+					"host": [
+						"10",
+						"12",
+						"68",
+						"83"
+					],
+					"port": "8081",
+					"path": [
+						"superpointservice",
+						"services",
+						"simulate",
+						"realtime"
+					]
+				},
+				"description": "pentru mada"
+			},
+			"response": []
+		}
+	]
+}
